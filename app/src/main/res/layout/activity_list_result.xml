@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.akash.loginmain.ListResult">
+
+    <TextView
+        android:id="@+id/client_name"
+        android:layout_width="250dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="34dp"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="28dp"
+        android:text="Name"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/client_email"
+        android:layout_width="250dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="22dp"
+        android:text="Email"
+        android:layout_below="@+id/client_name"
+        android:layout_alignLeft="@+id/client_name"
+        android:layout_alignStart="@+id/client_name" />
+
+    <TextView
+        android:id="@+id/client_address"
+        android:layout_width="250dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="19dp"
+        android:text="Address"
+        android:layout_below="@+id/client_email"
+        android:layout_alignLeft="@+id/client_email"
+        android:layout_alignStart="@+id/client_email" />
+
+    <TextView
+        android:id="@+id/client_mobile"
+        android:layout_width="250dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="24dp"
+        android:text="Mobile"
+        android:layout_below="@+id/client_address"
+        android:layout_alignLeft="@+id/client_address"
+        android:layout_alignStart="@+id/client_address" />
+</RelativeLayout>

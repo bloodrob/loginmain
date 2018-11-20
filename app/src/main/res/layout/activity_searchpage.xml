@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10"
+    tools:context="com.example.akash.loginmain.searchpage">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="164dp"
+        android:background="@drawable/back_register"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/frameLayout2">
+
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_below="@+id/frameLayout2"
+        android:layout_marginLeft="35dp"
+        android:text="Button" />
+
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:text="Button"
+        android:layout_below="@+id/frameLayout2"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="35dp"
+        android:layout_marginEnd="24dp" />
+
+    <Button
+        android:id="@+id/button9"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_alignLeft="@+id/button7"
+        android:layout_alignStart="@+id/button7"
+        android:layout_below="@+id/button7"
+        android:layout_marginTop="24dp"
+        android:text="Button" />
+
+    <Button
+        android:id="@+id/button10"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_alignLeft="@+id/button8"
+        android:layout_alignStart="@+id/button8"
+        android:layout_alignTop="@+id/button9"
+        android:text="Button" />
+
+</RelativeLayout>

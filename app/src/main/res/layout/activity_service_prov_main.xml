@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.akash.loginmain.ServiceProvMain">
+
+    <Button
+        android:id="@+id/service"
+        android:layout_width="170dp"
+        android:layout_height="50dp"
+        android:text="New to the system, Register here"
+        tools:layout_editor_absoluteX="135dp"
+        tools:layout_editor_absoluteY="94dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/sp_login"
+        android:layout_alignStart="@+id/sp_login"
+        android:layout_marginBottom="156dp" />
+
+    <TextView
+        android:id="@+id/textView27"
+        android:layout_width="290dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="89dp"
+        android:text="Welcome to the access procedure of servive provider"
+
+        android:textSize="20sp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/sp_login"
+        android:layout_width="170dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="98dp"
+        android:text="Log In"
+        android:layout_below="@+id/textView27"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.akash.loginmain.sp_login">
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:text="TextView"
+        android:textSize="30sp"
+        android:layout_marginTop="38dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/textView14"
+        android:layout_marginTop="72dp"
+        android:layout_toLeftOf="@+id/textView14"
+        android:layout_toStartOf="@+id/textView14"
+        android:text="email" />
+
+    <EditText
+        android:id="@+id/sp_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView19"
+        android:layout_alignBottom="@+id/textView19"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:ems="10"
+        android:inputType="textEmailAddress" />
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView19"
+        android:layout_alignStart="@+id/textView19"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="19dp"
+        android:layout_marginStart="19dp"
+        android:text="password" />
+
+    <EditText
+        android:id="@+id/sp_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:ems="10"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/sp_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:text="Log In"
+        android:layout_below="@+id/sp_password"
+        android:layout_alignLeft="@+id/sp_password"
+        android:layout_alignStart="@+id/sp_password" />
+
+    <Button
+        android:id="@+id/reg_go"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="37dp"
+        android:text="Register"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/sp_login"
+        android:layout_alignEnd="@+id/sp_login" />
+
+    <Button
+        android:id="@+id/Forgot_pass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/sp_login"
+        android:layout_alignStart="@+id/sp_login"
+        android:layout_below="@+id/sp_login"
+        android:layout_marginTop="13dp"
+        android:text="Forgot Password" />
+</RelativeLayout>

@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/txtimg"
+    tools:context="com.example.akash.loginmain.sp_info_insert">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="INSERT YOUR INFORMATION"
+        android:textColor="#ffffff"
+        android:textSize="27dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:textColor="#ffffff"
+        android:layout_alignBaseline="@+id/sp_name"
+        android:layout_alignBottom="@+id/sp_name"
+        android:layout_toLeftOf="@+id/sp_name"
+        android:layout_toStartOf="@+id/sp_name"
+        android:layout_marginRight="24dp"
+        android:layout_marginEnd="24dp" />
+
+    <EditText
+        android:id="@+id/sp_address"
+        android:layout_width="230dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:textColor="#ffffff"
+        android:inputType="textPersonName"
+        android:text=""
+        android:layout_below="@+id/sp_name"
+        android:layout_alignLeft="@+id/sp_name"
+        android:layout_alignStart="@+id/sp_name" />
+
+    <EditText
+        android:id="@+id/sp_name"
+        android:layout_width="230dp"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/textView"
+        android:layout_alignStart="@+id/textView"
+        android:layout_below="@+id/textView"
+        android:textColor="#ffffff"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="31dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Address"
+        android:textColor="#ffffff"
+        android:layout_alignBaseline="@+id/sp_address"
+        android:layout_alignBottom="@+id/sp_address"
+        android:layout_alignLeft="@+id/textView3"
+        android:layout_alignStart="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="State"
+        android:layout_alignBaseline="@+id/sp_state"
+        android:layout_alignBottom="@+id/sp_state"
+        android:layout_alignLeft="@+id/textView5"
+        android:layout_alignStart="@+id/textView5" />
+
+    <EditText
+        android:id="@+id/sp_state"
+        android:layout_width="230dp"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/sp_address"
+        android:layout_alignStart="@+id/sp_address"
+        android:layout_below="@+id/sp_address"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dis."
+        android:layout_alignBaseline="@+id/sp_district"
+        android:layout_alignBottom="@+id/sp_district"
+        android:layout_alignLeft="@+id/textView6"
+        android:layout_alignStart="@+id/textView6" />
+
+    <EditText
+        android:id="@+id/sp_district"
+        android:layout_width="230dp"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/sp_state"
+        android:layout_alignStart="@+id/sp_state"
+        android:layout_below="@+id/sp_state"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PIN"
+        android:layout_alignBaseline="@+id/sp_pin"
+        android:layout_alignBottom="@+id/sp_pin"
+        android:layout_alignLeft="@+id/textView7"
+        android:layout_alignStart="@+id/textView7" />
+
+    <EditText
+        android:id="@+id/sp_pin"
+        android:layout_width="230dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        android:layout_below="@+id/sp_district"
+        android:layout_alignLeft="@+id/sp_district"
+        android:layout_alignStart="@+id/sp_district" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="230dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/sp_pin"
+        android:layout_alignLeft="@+id/sp_pin"
+        android:layout_alignStart="@+id/sp_pin" />
+
+    <ScrollView
+        android:layout_width="230dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/spinner"
+        android:layout_alignLeft="@+id/spinner"
+        android:layout_alignStart="@+id/spinner"
+        android:id="@+id/scrollView2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/scrollView2"
+        android:layout_alignLeft="@+id/textView8"
+        android:layout_alignStart="@+id/textView8"
+        android:layout_marginBottom="13dp"
+        android:text="Service" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="39dp"
+        android:text="Description"
+        android:layout_below="@+id/textView10"
+        android:layout_toLeftOf="@+id/sp_name"
+        android:layout_toStartOf="@+id/sp_name" />
+
+    <Button
+        android:id="@+id/submit_sp"
+        android:layout_width="230dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/scrollView2"
+        android:layout_marginTop="12dp"
+        android:layout_toEndOf="@+id/textView7"
+        android:layout_toRightOf="@+id/textView7"
+        android:background="#a9a9a9"
+        android:text="submit"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

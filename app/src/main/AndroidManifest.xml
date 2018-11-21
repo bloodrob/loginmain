@@ -31,7 +31,8 @@
         <activity android:name=".ListResult" />
         <activity android:name=".ResetPassword" />
         <activity android:name=".ServiceProvMain" />
-        <activity android:name=".ClientMain"></activity>
+        <activity android:name=".ClientMain" />
+        <activity android:name=".Pranjal"></activity>
     </application>
 
 </manifest>
